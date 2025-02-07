@@ -39,7 +39,7 @@ class TestStatusCommand(SubManFixture):
         self.mock_entitlement_instance.get_status = Mock(return_value=MOCK_SERVICE_STATUS_SCA)
         self.entitlement_mock.EntitlementService = Mock(return_value=self.mock_entitlement_instance)
 
-    def test_disabled_status_sca_mode(self):
+    def test_status_sca_mode_registered(self):
         """
         Test status, when SCA mode is used
         """
